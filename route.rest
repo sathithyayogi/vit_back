@@ -1,0 +1,35 @@
+GET http://localhost:3001/
+###
+
+GET http://localhost:3001/633851c486c73ae2da13b376
+
+###
+POST http://localhost:3001/form/save-details
+Content-Type:application/json
+
+{
+    "firstName":"Arivazhagdan",
+        "lastName":"nalla dthambi",
+        "middleName":"N",
+        "address":"pallavaradm",
+        "country":"India",
+        "state":"TN",
+        "zipcode":"600070",
+        "email":"esaithamizh@gmail.com",
+        "phone":8610820009,
+        "height":"5.11",
+        "weight":"65"
+
+}
+
+###
+
+DELETE http://localhost:3001/form/delete-details/63390591947b62de6db4381f
+
+###
+PATCH http://localhost:3001/update/633851c486c73ae2da13b376
+Content-Type: application/json
+
+{
+    "firstName":"Mals"
+}
